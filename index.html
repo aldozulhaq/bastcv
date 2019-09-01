@@ -1,3 +1,153 @@
+<!DOCTYPE html>
 <html>
-<p>tes</p>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ImDaBast Portofolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css">
+    <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+    <link rel="stylesheet" href="css/stel.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic">
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    
+  </head>
+  <body>
+
+    <!-- Side Navbar -->
+<header class="site-header">
+    <div class="site-branding">
+        <h1 class="site-title"><a href="index.html" rel="home"><img src="img/logo.png" alt="Logo"></a></h1>
+    </div>
+    <div class="hamburger-menu">
+        <div class="menu-icon">
+            <img src="img/menu-icon.png" alt="menu icon">
+        </div>
+        <div class="menu-close-icon">
+            <img src="img/x.png" alt="menu close icon">
+        </div>
+    </div>
+</header>
+
+<nav class="site-navigation flex flex-column justify-content-between">
+    <div class="site-branding d-none d-lg-block ">
+        <h1 class="site-title"><a href="index.html" rel="home"><img src="img/logo2.png" alt="Logo"></a></h1>
+    </div>
+
+    <ul class="main-menu flex flex-column justify-content-center smooth-scroll list-unstyled">
+        <li><a href="#hom3">Home</a></li>
+        <li><a href="#gall3ry">Gallery</a></li>
+        <li><a href="#contact-f0rm">Contact</a></li>
+    </ul>
+
+    <div class="social-profiles">
+        <ul class="flex justify-content-start justify-content-lg-center align-items-center">
+            <li><a href="https://www.facebook.com/Maldoz74"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://instagram.com/imdabast"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/imdabast1"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="nav-bar-sep d-lg-none"></div>
+
+    <!-- Home -->
+    <section id="hom3" class="py-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-10">
+            <h1 class="text-xl">Hello.<br>I'm <span class="text-primary">Aldo</span>| a student, web <span class="text-primary">designer </span> and a <span class="text-primary"> digital </span> artist</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Works-->
+    <section id="gall3ry" class="pt-5">
+      <div class="container">
+        <h2 class="h1 text-lg lined">Featured works</h2>
+        <p class="lead mb-5">A bunch of art that i made over the years.</p>
+      </div>
+      <div class="row">
+        
+        <a href="img/portfolio/paper-presentation.jpg" data-lightbox="gallery" data-title="Mockup" class="col-lg-3 col-sm-6 p-0"><img src="img/portfolio/paper-presentation.jpg" alt="" class="img-fluid"></a>
+
+        <a href="img/portfolio/business-card-26.jpg" data-lightbox="gallery" data-title="Kartu Bisnis" class="col-lg-3 col-sm-6 p-0"><img src="img/portfolio/business-card-26.jpg" alt="" class="img-fluid"></a>
+
+        <a href="img/portfolio/gravity-paper.jpg" data-lightbox="gallery" data-title="Kertas Lugur" class="col-lg-3 col-sm-6 p-0"><img src="img/portfolio/gravity-paper.jpg" alt="" class="img-fluid"></a>
+
+        <a href="img/portfolio/envelope-brand.jpg" data-lightbox="gallery" data-title="Amplop" class="col-lg-3 col-sm-6 p-0"><img src="img/portfolio/envelope-brand.jpg" alt="" class="img-fluid"></a>
+
+        <a href="img/portfolio/business-card.jpg" data-lightbox="gallery" data-title="Amplop 1" class="col-lg-3 col-sm-6 p-0"><img src="img/portfolio/business-card.jpg" alt="" class="img-fluid"></a>
+
+        <a href="img/portfolio/trifold.jpg" data-lightbox="gallery" data-title="Majalah" class="col-lg-3 col-sm-6 p-0"><img src="img/portfolio/trifold.jpg" alt="" class="img-fluid"></a>
+
+        <a href="img/portfolio/label-clothes.jpg" data-lightbox="gallery" data-title="Gantungan" class="col-lg-3 col-sm-6 p-0"><img src="img/portfolio/label-clothes.jpg" alt="" class="img-fluid"></a>
+
+        <a href="img/portfolio/ipad-air-2.jpg" data-lightbox="gallery" data-title="Ipad Air" class="col-lg-3 col-sm-6 p-0"><img src="img/portfolio/ipad-air-2.jpg" alt="" class="img-fluid"></a>
+      </div>
+    </section>
+
+    <!-- Contact Section-->
+    <section id="contact-f0rm" class="py-5">
+      <div class="container py-5">
+        <h2 class="h1 text-lg lined mb-5">Contact</h2>
+        <div class="row">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <form id="contact-form" method="post" class="contact-form form">
+              <div class="row">
+                <div class="form-group col-lg-6">
+                  <label for="name" class="font-weight-normal">Your firstname *</label>
+                  <input id="name" type="text" name="name" placeholder="Enter your firstname" required class="form-control">
+                </div>
+                <div class="form-group col-lg-6">
+                  <label for="surname" class="font-weight-normal">Your lastname *</label>
+                  <input id="surname" type="text" name="surname" placeholder="Enter your lastname" required class="form-control">
+                </div>
+                <div class="form-group col-lg-12">
+                  <label for="email" class="font-weight-normal">Your email *</label>
+                  <input id="email" type="email" name="email" placeholder="Enter your email" required class="form-control">
+                </div>
+                <div class="form-group col-lg-12">
+                  <label for="message" class="font-weight-normal">Your message for us *</label>
+                  <textarea id="message" rows="4" name="message" placeholder="Enter your message" required class="form-control"></textarea>
+                </div>
+                <div class="form-group col-lg-12">
+                  <button type="submit" class="btn btn-outline-primary btn-block">Send message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <p class="mb-4">Effects present letters inquiry no an removed or friends. Desire behind letter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.</p>
+            <p>Able an hope of body. Any nay shyness matters own removal nothing its forming. Love own additions education satisfied the perpetual. If it cause manor happy. Without farther it exposed saw man led. Along on happy could cease green oh.</p>
+            <ul class="list-inline text-center">
+              <li class="list-inline-item"><a href="https://www.facebook.com/Maldoz74" class="social-link facebook"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a href="https://twitter.com/imdabast1" class="social-link twitter"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="https://instagram.com/imdabast" class="social-link instagram"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer style="background: #282c37" class="py-4 text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center text-lg-center">
+            <p class="mb-0 font-weight-light text-small"><a href="https://instagram.com/imdabast" target="_blank"><span style="color:white;">ImDaBast</span></a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/gaya.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/lightbox2/js/lightbox.min.js"></script>
+    <script src="vendor/leaflet/leaflet.js"></script>
+    <script src="js/front.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
 </html>
